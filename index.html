@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpeg" href="logo0.jpeg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -167,15 +168,26 @@
                     <span class="c-icon">📱</span>
                     <div>
                         <h4>تابعنا</h4>
-                        <p>Facebook · Instagram · TikTok</p>
+                        <div class="follow-icons">
+                            <a href="https://www.facebook.com/share/1E7bBwCNM9/" target="_blank" rel="noopener" class="follow-icon facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/koshry_el_ghobashy/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener" class="follow-icon instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@koshary_el_ghobashy?_r=1&_t=ZS-96kKaahQ3hh" target="_blank" rel="noopener" class="follow-icon tiktok" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xlgvzlkq" method="POST">
                 <h3>أرسل رسالة</h3>
-                <input type="text" placeholder="اسمك" required>
-                <input type="tel" placeholder="رقم هاتفك">
-                <textarea placeholder="رسالتك..." rows="4" required></textarea>
+                <input type="text" name="name" placeholder="اسمك" required>
+                <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+                <input type="tel" name="phone" placeholder="رقم هاتفك">
+                <textarea name="message" placeholder="رسالتك..." rows="4" required></textarea>
                 <button type="submit">إرسال ✦</button>
             </form>
         </div>
